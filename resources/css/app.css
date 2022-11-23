@@ -1,0 +1,326 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.tooltip {
+    @apply invisible relative;
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50
+}
+
+@layer base {
+    @font-face {
+        font-family: 'HelveticaNeueME_1';
+        src: url('../../public/fonts/HelveticaNeueMEforSKYW21-Rg_web.woff2') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'sakr-bold';
+        src: url('../../public/fonts/SSSakrSoft-Bold.otf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'GESSTwoBold';
+        src: url('../../public/fonts/GESSTwoBold.eot') format('truetype');
+        src: url('../../public/fonts/GESSTwoBold.otf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'NotoKufiArabic-VariableFont_wght';
+        src: url('../../public/fonts/NotoKufiArabic-VariableFont_wght.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'uthmanic';
+        src: url('../../public/fonts/UthmanicHafs1 Ver09.otf') format('truetype');
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'conv_thesansarab-bold';
+        src: url(../../public/fonts/TheSansArab-Bold.eot);
+        src: local('â˜º'), url(../../public/fonts/TheSansArab-Bold.ttf) format('truetype'), url(../../public/fonts/TheSansArab-Bold.svg) format('svg');
+        font-weight: 200;
+        font-style: normal
+    }
+
+    @font-face {
+        font-family: 'Droid Arabic Naskh';
+        font-style: normal;
+        font-weight: 400;
+        src: url(../../public/fonts/DroidNaskh-Regular.eot);
+        src: url(../../public/fonts/DroidNaskh-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../../public/fonts/DroidNaskh-Regular.woff2) format('woff2'),
+        url(../../public/fonts/DroidNaskh-Regular.woff) format('woff'),
+        url(../../public/fonts/DroidNaskh-Regular.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Droid Arabic Naskh';
+        font-style: normal;
+        font-weight: 700;
+        src: url(../../public/fonts/DroidNaskh-Bold.eot);
+        src: url(../../public/fonts/DroidNaskh-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../../public/fonts/DroidNaskh-Bold.woff2) format('woff2'),
+        url(../../public/fonts/DroidNaskh-Bold.woff) format('woff'),
+        url(../../public/fonts/DroidNaskh-Bold.ttf) format('truetype');
+    }
+
+    @font-face{
+        font-family:'cocon';
+        src:url('../../public/fonts/cocon.eot?v=4.1.0');
+        src:url('../../public/fonts/cocon.eot?#iefix&v=4.1.0') format('embedded-opentype'),
+        url('../../public/fonts/cocon.woff?v=4.1.0') format('woff'),
+        url('../../public/fonts/cocon.ttf?v=4.1.0') format('truetype'),
+        url('../../public/fonts/cocon.svg?v=4.1.0#fontawesomeregular') format('svg');
+        font-weight:700;
+        font-style:normal
+    }
+
+    @font-face {
+        font-family:'MhgozFont';
+        src: url('../../public/fonts/MHGOZ-Light.eot');
+        src: local('?'), url('../../public/fonts/MHGOZ-Light.woff') format('woff'),
+        url('../../public/fonts/MHGOZ-Light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /*@font-face {*/
+    /*    font-family: 'Tajawal-Light';*/
+    /*    src: url('../../public/fonts/Tajawal-Light.ttf') format('truetype');*/
+    /*    font-weight: normal;*/
+    /*    font-style: normal;*/
+    /*}*/
+    /*@font-face {*/
+    /*    font-family: 'Almarai-Bold';*/
+    /*    src: url('../../public/fonts/Almarai-Bold.ttf') format('truetype');*/
+    /*    font-weight: normal;*/
+    /*    font-style: normal;*/
+    /*}*/
+    @font-face {
+        font-family: 'bein-ar-black_0';
+        src: url('../../public/fonts/bein-ar-black_0.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'bein-ar-normal_0';
+        src: url('../../public/fonts/bein-ar-normal_0.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'AR-BBC-Regular';
+        src: url('../../public/fonts/AR-BBC-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /*@font-face {*/
+    /*    font-family: 'cairo';*/
+    /*    src: url('../../public/fonts/Cairo_Semi_Bold.ttf') format('truetype');*/
+    /*    font-weight: normal;*/
+    /*    font-style: normal;*/
+    /*}*/
+    /*@font-face {*/
+    /*    font-family: 'Ar-Ith';*/
+    /*    src: url('../../public/fonts/Ar-Ith.ttf') format('truetype');*/
+    /*    font-weight: normal;*/
+    /*    font-style: normal;*/
+    /*}*/
+    /*@font-face {*/
+    /*    font-family: 'AlMohanad';*/
+    /*    src: url('../../public/fonts/AlMohanad.ttf') format('truetype');*/
+    /*    font-weight: normal;*/
+    /*    font-style: normal;*/
+    /*}*/
+    /*@font-face {*/
+    /*    font-family: 'ibm';*/
+    /*    src: url('../../public/fonts/IBMPlexSansArabic-SemiBold.ttf') format('truetype');*/
+    /*    font-weight: normal;*/
+    /*    font-style: normal;*/
+    /*}*/
+    @font-face {
+        font-family: 'GESSTwoMedium';
+        src: url('../../public/fonts/GESSTwoMedium.eot') format('truetype');
+        src: url('../../public/fonts/GESSTwoMedium.otf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Tajawal-Medium';
+        src: url('../../public/fonts/Tajawal-Medium.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+    @font-face {
+        font-family: 'NotoSansArabic-VariableFont_wdth,wght';
+        src: url('../../public/fonts/NotoSansArabic-VariableFont_wdth,wght.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Fredoka-VariableFont_wdth,wght.ttf';
+        src: url('../../public/fonts/Fredoka-VariableFont_wdth,wght.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+}
+/*.font-ibm {*/
+/*    font-family: 'ibm', 'sans-serif';*/
+/*}*/
+
+/*.font-cairo {*/
+/*    font-family: 'cairo', 'sans-serif';*/
+/*}*/
+
+/*.font-ith {*/
+/*    font-family: 'Ar-Ith', 'sans-serif';*/
+/*}*/
+
+/*.font-mohanad {*/
+/*    font-family: 'AlMohanad', 'sans-serif';*/
+/*}*/
+
+/*.font-almarai {*/
+/*    font-family: 'Almarai-Bold', 'sans-serif';*/
+/*}*/
+
+.font-bein-bold {
+    font-family: 'bein-ar-black_0', 'sans-serif';
+}
+
+.font-bein {
+    font-family: 'bein-ar-normal_0', 'sans-serif';
+}
+
+.font-bbc {
+    font-family: 'AR-BBC-Regular', 'sans-serif';
+}
+
+.font-noto {
+    font-family: 'NotoSansArabic-VariableFont_wdth,wght', 'sans-serif';
+}
+
+.font-fredoka {
+    font-family: 'Fredoka-VariableFont_wdth,wght.ttf', 'sans-serif';
+}
+
+/*.font-tajwal-light {*/
+/*    font-family: 'Tajawal-Medium', 'sans-serif';*/
+/*}*/
+
+
+.font-kufi {
+    font-family: 'NotoKufiArabic-VariableFont_wght', 'sans-serif';
+}
+
+.font-helve-one {
+    font-family: 'HelveticaNeueME_1', 'sans-serif';
+}
+
+/*.font-helve-two {*/
+/*    font-family: 'HelveticaNeueME_2', 'sans-serif';*/
+/*}*/
+
+.font-gesst {
+    font-family: 'GESSTwoBold', 'sans-serif';
+}
+
+.font-gesst-medium {
+    font-family: 'GESSTwoMedium', 'sans-serif';
+}
+
+.font-tajwal-medium {
+    font-family: 'Tajawal-Medium', 'sans-serif';
+}
+
+.font-uthman {
+    font-family: 'uthmanic', 'sans-serif';
+}
+
+.font-sansarab {
+    font-family: 'conv_thesansarab-bold', 'sans-serif';
+}
+
+.font-droid {
+    font-family: 'Droid Arabic Naskh', 'sans-serif';
+}
+
+.font-cocon {
+    font-family: 'cocon', 'sans-serif';
+}
+
+.font-goz {
+    font-family: 'MhgozFont', 'sans-serif';
+}
+
+.font-sakr-bold {
+    font-family: 'sakr-bold', 'sans-serif';
+}
+
+.share-icons {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    borderRadius: 3;
+    border: 0;
+    color: white;
+    padding: 0 30px;
+    boxShadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+}
+
+.mainBgImage {
+    background-repeat: repeat;
+    background-size: 100px;
+    background-color: white;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.anchorBehave {
+    scroll-margin-top: 150px;
+}
+
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-shadow-md {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
+    }
+
+    .text-shadow-lg {
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    }
+
+    .text-shadow-none {
+        text-shadow: none;
+    }
+}
+
+#btn-back-to-top {
+    position: fixed;
+}

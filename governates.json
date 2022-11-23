@@ -1,0 +1,92 @@
+[
+    {
+        "name_ar": "الجهراء",
+        "name_en": "Jahra",
+        "code": "A246",
+        "order": "6",
+        "active": "1",
+        "country_id": "1",
+        "price": "2"
+    },
+    {
+        "name_ar": "ألاحمدي",
+        "name_en": "Ahmadi",
+        "code": "A241",
+        "order": "6",
+        "active": "1",
+        "country_id": "1",
+        "price": "1.5"
+    },
+    {
+        "name_ar": "مبارك الكبير",
+        "name_en": "Mubarak Al Kabir",
+        "code": "MB244",
+        "order": "4",
+        "active": "1",
+        "country_id": "1",
+        "price": "1.5"
+    },
+    {
+        "name_ar": "حولي",
+        "name_en": "Hawally",
+        "code": "HW243",
+        "order": "2",
+        "active": "1",
+        "country_id": "1",
+        "price": "1.5"
+    },
+    {
+        "name_ar": "الفروانية",
+        "name_en": "Farwaniya",
+        "code": "A242",
+        "order": "3",
+        "active": "1",
+        "country_id": "1",
+        "price": "1.5"
+    },
+    {
+        "name_ar": "العاصمة",
+        "name_en": "Kuwait City",
+        "code": "A245",
+        "order": "1",
+        "active": "1",
+        "country_id": "1",
+        "price": "1.5"
+    },
+    {
+        "name_ar": "مكة",
+        "name_en": "Macca",
+        "code": "1234",
+        "order": "1",
+        "active": "1",
+        "country_id": "2",
+        "price": "5"
+    },
+    {
+        "name_ar": "الرياض",
+        "name_en": "Ryadi",
+        "code": "123",
+        "order": "1",
+        "active": "1",
+        "country_id": "2",
+        "price": "5"
+    },
+    {
+        "name_ar": "الشارقة",
+        "name_en": "Shariqa",
+        "code": "1235",
+        "order": "1",
+        "active": "1",
+        "country_id": "3",
+        "price": "5"
+    },
+    {
+        "name_ar": "دبي",
+        "name_en": "Dubai",
+        "code": "1236",
+        "order": "1",
+        "active": "1",
+        "country_id": "3",
+        "price": "5"
+    }
+]
