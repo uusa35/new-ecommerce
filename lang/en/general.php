@@ -1299,4 +1299,8 @@ return array (
     "national_event" => "event",
     "national_events" => "national events",
     "international_events" => "international events",
+    "translation_management" => "translation management",
+    "paid_order" => "paid order",
+    "translations" => "translations",
+    "no_sale" => "no sale"
 );

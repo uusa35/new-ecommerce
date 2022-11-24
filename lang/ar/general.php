@@ -1286,6 +1286,7 @@ return array(
     "no_payment_method_selected" => "لم يتم اختيار طريقة الدفع",
     "cancelled" => "مرتجع",
     "paid_orders" => "طلبات مدفوعة",
+    "paid_order" => "طلبات مدفوعة",
     "no_available_timings" => "لا يوجد توقيتات متاحة",
     "fixed_delivery_value" => "سعر توصيل ثابت",
     "fixed_delivery_charge" => "سعر توصيل ثابت",
@@ -1299,4 +1300,8 @@ return array(
     "national_event" => "فعالية",
     "national_events" => " فعاليات محلية",
     "international_events" => "فعاليات دولية",
+    "translation_management" => "إدارة الترجمة",
+    "paid_order" => "طلبات مدفوعة",
+    "translations" => "الترجمة",
+    "no_sale" => "بدون خصومات"
 );
