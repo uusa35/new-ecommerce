@@ -14,7 +14,16 @@ RUN apt-get update && apt-get install -y \
     libmcrypt-dev \
     libreadline-dev \
     libfreetype6-dev \
+    libzip-dev \
     g++
+
+RUN apt-get update && \
+     apt-get install -y \
+         libzip-dev \
+         && docker-php-ext-install zip
+
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Apache configuration
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
@@ -30,7 +39,9 @@ RUN docker-php-ext-install \
     bcmath \
     opcache \
     calendar \
-    pdo_mysql
+    pdo_mysql \
+    gd
+
 
 # Ensure PHP logs are captured by the container
 ENV LOG_CHANNEL=stderr
@@ -46,6 +57,9 @@ RUN cd /var/www/tmp && composer install --no-dev
 # Ensure the entrypoint file can be run
 RUN chmod +x /var/www/tmp/docker-entrypoint.sh
 ENTRYPOINT ["/var/www/tmp/docker-entrypoint.sh"]
+
+# Set working directory
+WORKDIR /var/www
 
 # The default apache run command
 CMD ["apache2-foreground"]

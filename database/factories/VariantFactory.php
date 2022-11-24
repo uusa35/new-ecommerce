@@ -2,8 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Attribute;
-use App\Models\AttributeValue;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
