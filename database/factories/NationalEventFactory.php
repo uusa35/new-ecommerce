@@ -3,14 +3,16 @@
 namespace Database\Factories;
 
 use App\Models\Governate;
+use App\Models\Nationalevent;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Nationalevent>
+// * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Nationalevent>
  */
 class NationalEventFactory extends Factory
 {
+    protected $model = Nationalevent::class;
     /**
      * Define the model's default state.
      *
