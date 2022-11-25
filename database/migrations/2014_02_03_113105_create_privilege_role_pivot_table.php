@@ -13,6 +13,7 @@ class CreatePrivilegeRolePivotTable extends Migration
     public function up()
     {
         Schema::create('privilege_role', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('privilege_id')->constrained('privileges')->cascadeOnDelete();
             $table->foreignId('role_id')->constrained('roles')->cascadeOnDelete();
 
