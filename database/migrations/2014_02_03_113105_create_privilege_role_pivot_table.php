@@ -13,15 +13,15 @@ class CreatePrivilegeRolePivotTable extends Migration
     public function up()
     {
         Schema::create('privilege_role', function (Blueprint $table) {
-            $table->foreignId('privilege_id')->references('id')->on('privileges');
-            $table->foreignId('role_id')->references('id')->on('roles');
+            $table->foreignId('privilege_id')->constrained('privileges')->cascadeOnDelete();
+            $table->foreignId('role_id')->constrained('roles')->cascadeOnDelete();
 
             $table->boolean('index')->default(false);
             $table->boolean('view')->default(false);
             $table->boolean('create')->default(false);
             $table->boolean('update')->default(false);
             $table->boolean('delete')->default(false);
-//            $table->primary(['privilege_id', 'role_id']);
+            $table->primary(['privilege_id', 'role_id']);
         });
     }
 
