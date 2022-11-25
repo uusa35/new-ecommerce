@@ -1,0 +1,1 @@
+import{r as a,A as s,a as t}from"./app.8f41755a.js";function n({active:e=!1}){const{classNames:r}=a.exports.useContext(s);return t("div",{className:r(e?"bg-green-900":"bg-gray-600","flex-shrink-0 w-2.5 h-2.5 mx-6 border-2 rounded-full"),"aria-hidden":"true"})}export{n as default};

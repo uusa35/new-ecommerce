@@ -1,0 +1,1 @@
+import{a as r}from"./app.8f41755a.js";function o({videoUrl:e}){return r("iframe",{width:"100%",height:"500",src:e,title:"YouTube video player",frameBorder:"0",className:"overflow-hidden aspect-h-1",allow:"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",allowFullScreen:!0})}export{o as default};

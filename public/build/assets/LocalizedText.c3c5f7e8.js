@@ -1,0 +1,1 @@
+import{r as c,A as n,a as p,l as i}from"./app.8f41755a.js";const u=({ar:a,en:e,capitalize:s=!1,textClasses:t="",length:o=18,separator:r=!0})=>{const{locale:l}=c.exports.useContext(n);return p("span",{className:`${s?"capitalize":""} ${t}`,children:i.exports.truncate(l==="ar"?a:e,{length:o,omission:r?"..":""})})};export{u as default};

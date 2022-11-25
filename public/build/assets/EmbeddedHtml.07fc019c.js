@@ -1,0 +1,1 @@
+import{p as o}from"./index.74c4741c.js";import{r,A as s,a as p}from"./app.8f41755a.js";function a({html:e}){const{textColor:t}=r.exports.useContext(s);return p("div",{className:`overflow-hidden w-full h-auto text-lg ${t}`,dangerouslySetInnerHTML:{__html:e}})}a.propTypes={html:o.exports.any.isRequired};export{a as default};

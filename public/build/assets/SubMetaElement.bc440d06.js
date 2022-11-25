@@ -1,0 +1,1 @@
+import{j as n,H as a,a as t}from"./app.8f41755a.js";const i=({title:e=null,image:l=null,description:s=null})=>n(a,{children:[t("title",{children:e}),t("meta",{name:"title",content:e})]});export{i as default};
