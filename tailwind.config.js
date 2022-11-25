@@ -20,12 +20,12 @@ module.exports = {
             },
         },
         fontFamily: {
+            'Tajawal-Medium': ['Tajawal-Medium', 'sans-serif'],
             'GESSTwoBold': ['GESSTwoBold', 'sans-serif'],
             'GESSTwoMedium': ['GESSTwoMedium', 'sans-serif'],
             'DroidArabicKufi': ['DroidArabicKufi', 'sans-serif'],
             'droid-bold': ['DroidArabicKufi-bold', 'sans-serif'],
             'Tajawal-Light': ['Tajawal-Light', 'sans-serif'],
-            'Tajawal-Medium': ['Tajawal-Medium', 'sans-serif'],
             'AR-Almarai-Font': ['AR-Almarai-Font', 'sans-serif'],
             'AR-BBC-Regular' : ['AR-BBC-Regular', 'sans-serif'],
             'AR-Almarai-Font' : ['AR-Almarai-Font', 'sans-serif'],

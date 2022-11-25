@@ -21,7 +21,7 @@ class CreatePrivilegeRolePivotTable extends Migration
             $table->boolean('create')->default(false);
             $table->boolean('update')->default(false);
             $table->boolean('delete')->default(false);
-            $table->primary(['privilege_id', 'role_id']);
+//            $table->primary(['privilege_id', 'role_id']);
         });
     }
 
