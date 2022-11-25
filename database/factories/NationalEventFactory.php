@@ -3,12 +3,12 @@
 namespace Database\Factories;
 
 use App\Models\Governate;
-use App\Models\Nationalevent;
+use App\Models\Nationalevent as NationalEvent;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<Nationalevent>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<NationalEvent>
  */
 class NationalEventFactory extends Factory
 {

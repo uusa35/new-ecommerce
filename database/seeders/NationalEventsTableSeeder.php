@@ -2,22 +2,16 @@
 
 namespace Database\Seeders;
 
-use App\Models\Alert;
 use App\Models\Category;
 use App\Models\Comment;
 use App\Models\Favorite;
 use App\Models\Image;
 use App\Models\Nationalevent;
-use App\Models\Product;
 use App\Models\Rating;
 use App\Models\Section;
 use App\Models\Slide;
 use App\Models\Tag;
-use App\Models\User;
-use App\Models\Variant;
-use App\Models\VariantAttribute;
 use App\Models\Video;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class NationalEventsTableSeeder extends Seeder
