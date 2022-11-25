@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<NationalEvent>
  */
-class NationalEventFactory extends Factory
+class NationaleventFactory extends Factory
 {
     /**
      * Define the model's default state.
