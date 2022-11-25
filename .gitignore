@@ -18,13 +18,5 @@ yarn-error.log
 /.vscode
 /helm/secrets.yml
 /helm/secrets.yml
-/mysql_deployment.yaml
-/mysql_secret.yaml
-/mysql_storage.yaml
-/nginx_configMap.yaml
-/ginx_deployment.yaml
-/nginx_service.yaml
-/nginx_service.yaml
-/php_service.yaml
-/php_deployment.yaml
+/kubernetes
 
